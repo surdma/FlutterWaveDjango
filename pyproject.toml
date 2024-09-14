@@ -1,18 +1,18 @@
-# [tool.poetry]
-# name = "FlutterwaveDjango"
-# version = "1.1.10"
-# description = "A Django Integration Library for Flutterwave Payment"
-# authors = ["Oladejo Sodiq Opeyemi <devsurdma@gmail.com>"]
-# license = "MIT"
-# readme = "README.md"
-# keywords = ["django", "flutterwave", "payment", "integration"]
-# classifiers = [
-#     "Development Status :: 5 - Production/Stable",
-#     "Intended Audience :: Developers",
-#     "License :: OSI Approved :: MIT License",
-#     "Programming Language :: Python :: 3",
-#     "Framework :: Django",
-# ]
+[tool.poetry]
+name = "FlutterwaveDjango"
+version = "1.1.11"
+description = "A Django Integration Library for Flutterwave Payment"
+authors = ["Oladejo Sodiq Opeyemi <devsurdma@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["django", "flutterwave", "payment", "integration"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Framework :: Django",
+]
 
 # [tool.poetry.urls]
 # homepage = "https://pypi.org/project/flutterwavedjango/"
@@ -28,13 +28,13 @@
 # [tool.poetry.group.dev.dependencies]
 # pytest = "^8.3.3"
 
-# [build-system]
-# requires = ["poetry-core"]
-# build-backend = "poetry.core.masonry.api"
-
 [build-system]
-requires = ["setuptools>=61.0.0,<69.3.0"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# [build-system]
+# requires = ["setuptools>=61.0.0,<69.3.0"]
+# build-backend = "setuptools.build_meta"
 
 [project]
 name = "FlutterwaveDjango"
