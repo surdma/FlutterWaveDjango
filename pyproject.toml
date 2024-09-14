@@ -1,0 +1,99 @@
+# [tool.poetry]
+# name = "FlutterwaveDjango"
+# version = "1.1.10"
+# description = "A Django Integration Library for Flutterwave Payment"
+# authors = ["Oladejo Sodiq Opeyemi <devsurdma@gmail.com>"]
+# license = "MIT"
+# readme = "README.md"
+# keywords = ["django", "flutterwave", "payment", "integration"]
+# classifiers = [
+#     "Development Status :: 5 - Production/Stable",
+#     "Intended Audience :: Developers",
+#     "License :: OSI Approved :: MIT License",
+#     "Programming Language :: Python :: 3",
+#     "Framework :: Django",
+# ]
+
+# [tool.poetry.urls]
+# homepage = "https://pypi.org/project/flutterwavedjango/"
+# repository = "https://github.com/surdma/FlutterWaveDjango"
+# "Bug Tracker" = "https://github.com/surdma/FlutterWaveDjango/issues"
+# "Source" = "https://github.com/surdma/FlutterWaveDjango"
+# "Documentation" = "https://pypi.org/project/flutterwavedjango"
+
+# [tool.poetry.dependencies]
+# python = "^3.11"
+# rave-python = "^1.4.1"
+
+# [tool.poetry.group.dev.dependencies]
+# pytest = "^8.3.3"
+
+# [build-system]
+# requires = ["poetry-core"]
+# build-backend = "poetry.core.masonry.api"
+
+[build-system]
+requires = ["setuptools>=61.0.0,<69.3.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "FlutterwaveDjango"
+dynamic = ["version"]
+requires-python = ">= 3.10"
+dependencies = [
+    "rave-python>=1.4.1",
+]
+authors = [
+  {name = "Oladejo Sodiq Opeyemi", email = "devsurdma@gmail.com"},
+]
+description = "A high-level Python payment framework that encourages rapid development and clean, pragmatic design."
+readme = "README.md"
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Internet :: WWW/HTTP :: WSGI",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.optional-dependencies]
+bcrypt = ["bcrypt"]
+
+# [project.scripts]
+# django-admin = "django.core.management:execute_from_command_line"
+
+[project.urls]
+Homepage = "https://pypi.org/project/flutterwavedjango/"
+Documentation = "https://pypi.org/project/flutterwavedjango/"
+"Release notes" = "https://pypi.org/project/flutterwavedjango/"
+Funding = "https://github.com/surdma/FlutterWaveDjango/"
+Source = "https://github.com/surdma/FlutterWaveDjango"
+Tracker = "https://github.com/surdma/FlutterWaveDjango"
+
+[tool.black]
+target-version = ["py310"]
+force-exclude = "tests/test_runner_apps/tagged/tests_syntax_error.py"
+
+[tool.isort]
+profile = "black"
+default_section = "THIRDPARTY"
+known_first_party = "django"
+
+# [tool.setuptools.dynamic]
+# version = {attr = "django.__version__"}
+
+# [tool.setuptools.packages.find]
+# include = ["django*"]
