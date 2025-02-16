@@ -14,20 +14,6 @@ classifiers = [
     "Framework :: Django",
 ]
 
-# [tool.poetry.urls]
-# homepage = "https://pypi.org/project/flutterwavedjango/"
-# repository = "https://github.com/surdma/FlutterWaveDjango"
-# "Bug Tracker" = "https://github.com/surdma/FlutterWaveDjango/issues"
-# "Source" = "https://github.com/surdma/FlutterWaveDjango"
-# "Documentation" = "https://pypi.org/project/flutterwavedjango"
-
-# [tool.poetry.dependencies]
-# python = "^3.11"
-# rave-python = "^1.4.1"
-
-# [tool.poetry.group.dev.dependencies]
-# pytest = "^8.3.3"
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
@@ -75,13 +61,13 @@ bcrypt = ["bcrypt"]
 # [project.scripts]
 # django-admin = "django.core.management:execute_from_command_line"
 
-[project.urls]
-Homepage = "https://pypi.org/project/flutterwavedjango/"
-Documentation = "https://pypi.org/project/flutterwavedjango/"
-"Release notes" = "https://pypi.org/project/flutterwavedjango/"
-Funding = "https://github.com/surdma/FlutterWaveDjango/"
-Source = "https://github.com/surdma/FlutterWaveDjango"
-Tracker = "https://github.com/surdma/FlutterWaveDjango"
+# [project.urls]
+# Homepage = "https://pypi.org/project/flutterwavedjango/"
+# Documentation = "https://pypi.org/project/flutterwavedjango/"
+# "Release notes" = "https://pypi.org/project/flutterwavedjango/"
+# Funding = "https://github.com/surdma/FlutterWaveDjango/"
+# Source = "https://github.com/surdma/FlutterWaveDjango"
+# Tracker = "https://github.com/surdma/FlutterWaveDjango"
 
 [tool.black]
 target-version = ["py310"]
@@ -92,8 +78,12 @@ profile = "black"
 default_section = "THIRDPARTY"
 known_first_party = "django"
 
-# [tool.setuptools.dynamic]
-# version = {attr = "django.__version__"}
+# 
 
-# [tool.setuptools.packages.find]
-# include = ["django*"]
+
+
+[tool.poetry.urls]
+homepage = "https://pypi.org/project/flutterwavedjango/"
+repository = "https://github.com/surdma/FlutterWaveDjango"
+bug_tracker = "https://github.com/surdma/FlutterWaveDjango/issues"
+documentation = "https://pypi.org/project/flutterwavedjango/"
